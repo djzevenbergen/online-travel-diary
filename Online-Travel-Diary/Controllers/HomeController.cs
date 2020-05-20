@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace OnlineTravelDiary.Controllers
 {
-  public class ItemsController : Controller
+  public class HomeController : Controller
   {
     [HttpGet("/")]
     public ActionResult Index()
