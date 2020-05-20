@@ -28,5 +28,18 @@ namespace OnlineTravelDiary.Models
     {
       return _instances;
     }
+
+    public static Place Find(int searchId)
+    {
+      foreach (Place place in _instances)
+      {
+        if (place.Id == searchId)
+        {
+          return place;
+        }
+      }
+      return null;
+    }
+
   }
 }
