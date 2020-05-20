@@ -1,0 +1,12 @@
+@using OnlineTravelDiary.Models;
+<h1>My Travels</h1>
+
+<ul>
+  @foreach(Place place in Model)
+  {
+    <li>@place.CityName</li>
+  }
+
+</ul>
+
+<a href="/place/new">Add a Trip!</a>
